@@ -1,0 +1,41 @@
+﻿using System;
+
+namespace Example04 {
+	class Program {
+		static void Main(string[] args) {
+			// MATHEMATICAL OPERATIONS
+			double number = 5.1;
+			double anotherNumber = 2.25;
+			double total;
+
+			// Addition:
+			total = number + anotherNumber;
+
+			// Subtraction:
+			total = number - anotherNumber;
+
+			// Multiplication:
+			total = number * anotherNumber;
+
+			// Division:
+			total = number / anotherNumber;
+
+			// Modulus:
+			total = 15 % 4; // 3
+
+			// WARNING:
+			// Data types can lead to wrong results if not properly dealt with.
+			double result = 15 / 4 * 3;
+			Console.WriteLine(result);
+
+			// The line above results in 9, but the correct result is 11.25.
+			// The reason for this is because we are not properly dealing with the data types.
+			// An operation performed with two integers will always return an integer.
+			// An operation performed with two doubles will always return a double.
+			// To fix this problem, we have to convert at least one of the values to the expected data type.
+
+			result = Convert.ToDouble(15) / 4 * 3;
+			Console.WriteLine(result);
+		}
+	}
+}
