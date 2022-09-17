@@ -10,25 +10,25 @@ namespace Example05 {
 			 
 			*/
 
-			// STEP 1: Declaring variables.
+			// STEP 01: Declaring variables.
 			double firstNumber;
 			double secondNumber;
-			double result;
+			double total;
 
-			// STEP 2: Collecting inputs.
+			// STEP 02: Collecting inputs.
 			Console.WriteLine("Please provide two numbers to multiply.");
-			Console.WriteLine("Enter the first number.");
+			Console.WriteLine("Enter the first number: ");
 			firstNumber = Convert.ToDouble(Console.ReadLine());
 
-			Console.WriteLine("Enter the second number.");
+			Console.WriteLine("Enter the second number: ");
 			secondNumber = double.Parse(Console.ReadLine());
 
-			// STEP 3: Algorithm.
-			result = firstNumber * secondNumber;
+			// STEP 03: Algorithm.
+			total = firstNumber * secondNumber;
 
-			// STEP 4: Display results:
-			Console.WriteLine("\nThe result is:");
-			Console.WriteLine(result);
+			// STEP 04: Displaying results.
+			Console.WriteLine("\nThe result is: ");
+			Console.WriteLine(total);
 		}
 	}
 }
