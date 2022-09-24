@@ -10,6 +10,28 @@ namespace Example05 {
 			 
 			*/
 
+			// IPO CHARTS
+			// IPO Charts give you better visualization as to what the moving parts in your system are.
+			// - Inputs;
+			// - Processing (algorithm);
+			// - Outputs.
+
+			// =====================================================================================
+			// |     INPUT      |                   PROCESSING                    |     OUTPUT     |
+			// |================|=================================================|================|
+			// |                |                                                 |                |  
+			// | firstNumber    | 1. Collect value for firstNumber                | total          |  
+			// | secondNumber   | 2. Store input in firstNumber                   |                |  
+			// |                | 3. Collect value for secondNumber               |                |  
+			// |                | 4. Store input in secondNumber                  |                |  
+			// |                | 5. Calculate total per formula:                 |                |  
+			// |                |    total = firstNumber * secondNumber           |                |  
+			// |                | 6. Print total to console                       |                |  
+			// |                |                                                 |                |  
+			// |                |                                                 |                |  
+			// =====================================================================================
+
+
 			// STEP 01: Declaring variables.
 			double firstNumber;
 			double secondNumber;
@@ -30,27 +52,5 @@ namespace Example05 {
 			Console.WriteLine("\nThe result is: ");
 			Console.WriteLine(total);
 		}
-
-		// IPO CHARTS
-		// IPO Charts give you better visualization as to what the moving parts are in your system.
-		// - Inputs;
-		// - Processing (algorithm);
-		// - Outputs.
-
-		// =====================================================================================                                 ==================
-		// |     INPUT      |                   PROCESSING                    |     OUTPUT     |
-		// ====================================================================================|
-		// |                |                                                 |                |                
-		// | firstNumber    | 1. Collect value for firstNumber                | total          |                
-		// | secondNumber   | 2. Store input in firstNumber                   |                |                
-		// |                | 3. Collect value for secondNumber               |                |                
-		// |                | 4. Store input in secondNumber                  |                |                
-		// |                | 5. Calculate total per formula:                 |                |                
-		// |                |    total = firstNumber * secondNumber           |                |                
-		// |                | 6. Print total to console                       |                |                
-		// |                |                                                 |                |                
-		// |                |                                                 |                |                
-		// |                |                                                 |                |
-		// =====================================================================================
 	}
 }
