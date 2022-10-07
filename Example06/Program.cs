@@ -3,7 +3,7 @@
 namespace Example06 {
 	class Program {
 		static void Main(string[] args) {
-			// NAMED CONSTANTS
+			// NAMED CONSTANTS:
 			// Named constants are values that do not change over time.
 
 			// When to use named constants?

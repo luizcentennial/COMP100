@@ -3,7 +3,7 @@
 namespace Example04 {
 	class Program {
 		static void Main(string[] args) {
-			// MATHEMATICAL OPERATIONS
+			// MATHEMATICAL OPERATIONS:
 			double number = 5.1;
 			double anotherNumber = 2.25;
 			double total;

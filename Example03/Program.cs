@@ -3,7 +3,7 @@
 namespace Example03 {
 	class Program {
 		static void Main(string[] args) {
-			// CONVERTING BETWEEN DATA TYPES
+			// CONVERTING BETWEEN DATA TYPES:
 			// At times, data will not immediately match the data type of the
 			// variable you need to store it in.
 
@@ -40,7 +40,7 @@ namespace Example03 {
 
 			// But, there are other ways...
 
-			// CASTING
+			// CASTING:
 			// Casting is a data type conversion technique that can be used to convert
 			// between any two data types THAT ARE NOT STRING.
 			int oneMoreNumber = (int)1.9;

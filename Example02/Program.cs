@@ -3,7 +3,7 @@
 namespace Example02 {
 	class Program {
 		static void Main(string[] args) {
-			// DATA TYPES
+			// DATA TYPES:
 			// Types of data.
 			// The various types in which information can be "stored" as.
 

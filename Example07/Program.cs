@@ -3,7 +3,7 @@
 namespace Example07 {
 	class Program {
 		static void Main(string[] args) {
-			// STRING MANIPULATION
+			// STRING MANIPULATION:
 			// Dynamically generate strings, or somehow change a string to a modified version of it.
 
 			// Dynamically generating strings:
@@ -11,16 +11,16 @@ namespace Example07 {
 			string example1 = "The number Pi is " + Math.PI + ".";
 			Console.WriteLine(example1);
 
-			// String interpolation;
+			// String interpolation:
 			string example2 = $"The number Pi is {Math.PI}.";
 			Console.WriteLine(example2);
 
-			// string.Format
+			// string.Format:
 			string example3 = string.Format("The number Pi is {0}, and today is {1}.", Math.PI, "Friday");
 			Console.WriteLine(example3);
 
 
-			// String formatters.
+			// String formatters:
 			// Reference: https://gist.github.com/luizcentennial/c6353c2ae21815420e616a6db3897b4c
 			string example4 = $"The number Pi is {Math.PI:F}.";
 			Console.WriteLine(example4);
