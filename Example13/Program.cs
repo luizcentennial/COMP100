@@ -4,7 +4,7 @@ namespace Example13 {
 	class Program {
 		static void Main(string[] args) {
 			// SWITCH STATEMENTS:
-			// A conditional structure that lets us define code blocks for multiple possible cases.
+			// A conditional structure that lets us define code blocks for multiple scenarios.
 
 			int variable = 1;
 

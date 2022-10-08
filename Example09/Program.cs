@@ -14,11 +14,11 @@ namespace Example09 {
 			// Example: (3 < 5) && (1 > 0) = True.
 			// Example: (3 > 5) || (1 > 0) = True.
 
-			// Verifying if 3 is less than five and 1 is greater than 0.
-			bool result = 3 < 5 && 1 > 0;
+			// Verifying if 3 is less than 5 and 1 is greater than 0.
+			bool result = (3 < 5) && (1 > 0);
 			Console.WriteLine(result);
 
-			// Verifying if 3 is less than five and 1 is less than 0, or 3 is different than 5.
+			// Verifying if 3 is less than 5 and 1 is less than 0, or 3 is different than 5.
 			result = 3 < 5 && 1 < 0 || 3 != 5;
 			Console.WriteLine(result);
 

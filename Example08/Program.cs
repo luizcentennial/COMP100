@@ -31,7 +31,7 @@ namespace Example08 {
 			Console.WriteLine(result);
 
 			// We need to be careful when comparing strings.
-			result = "TrUe".ToLower() == "tRuE".ToLower();
+			result = "TrUe".ToUpper() == "tRuE".ToUpper();
 			Console.WriteLine(result);
 
 			// We can also compare chars.

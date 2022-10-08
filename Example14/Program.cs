@@ -19,7 +19,7 @@ namespace Example14 {
 			if (temperature < 15) {
 				Console.WriteLine("Too cold!");
 			}
-			else if (temperature >= 15 && temperature <= 25) {
+			else if (temperature <= 25) { // Simplified from: temperature >= 15 && temperature <= 25.
 				Console.WriteLine("Perfect!");
 			}
 			else {
