@@ -4,7 +4,7 @@ namespace Example19 {
 	class Program {
 		static void Main(string[] args) {
 			// INFINITE LOOPS:
-			// An infinite loop is a loop that never stops.
+			// An infinite loop is a loop that "never" stops.
 
 			// Infinite while:
 			while (true) {
