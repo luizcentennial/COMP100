@@ -10,15 +10,19 @@ namespace Example23 {
 			// Arrays allow for the storage of multiple values at the same time.
 			// Arrays are strongly-typed data structures. In other words, all array elements have to be the same type.
 			// Array sizes are usually fixed, that is, not expected to change.
-			
+
 			// There are many ways to work with arrays.
 
 			// Declaration:
-			string[] values;  // String array.
+			string[] values; // String array.
 			int[] numbers; // Integer array.
 
 			// Initialization:
 			values = new string[5]; // Initializing to a new empty array with 5 empty slots.
+
+			// How do indexes work?
+			// Slots: _ _ _ _ _
+			// Index: 0 1 2 3 4
 
 			// With this approach, each slot has to be initialized individually, by index.
 			values[0] = "Hello";

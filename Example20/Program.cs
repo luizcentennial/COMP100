@@ -12,6 +12,7 @@ namespace Example20 {
 
 			while (true) {
 				Console.WriteLine(counter);
+				counter++;
 
 				// If the condition below returns true, the loop will be immediately interrupted.
 				if (counter == 5) {
@@ -20,8 +21,6 @@ namespace Example20 {
 					// In this case, nothing is executed past the "break" keyword.
 					// The loop completely stops.
 				}
-
-				counter++;
 			}
 
 			// And the code continues from here.

@@ -23,14 +23,16 @@ namespace Example22 {
 
 				Console.WriteLine($"Hello, {name}!");
 
-				Console.WriteLine($"Would you like to input your name again? (Y/N)");
+				Console.WriteLine("Would you like to input your name again? (Y/N)");
 				string input = Console.ReadLine();
 
-				if (input.ToUpper() == "N") {
-					break;
-				}
-				else if (input.ToUpper() == "Y") {
+				if (input.ToUpper() == "Y") {
+					Console.Clear();
+
 					continue;
+				}
+				else if (input.ToUpper() == "N") {
+					break;
 				}
 				else {
 					Console.ForegroundColor = ConsoleColor.Red;

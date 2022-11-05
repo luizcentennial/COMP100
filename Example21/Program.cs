@@ -11,22 +11,21 @@ namespace Example21 {
 			int counter = 0;
 
 			while (counter < 10) {
-				counter++;
-
 				// If the condition below returns true, this iteration will be immediately interrupted.
 				if (counter == 5) {
+					counter++;
 					continue;
 
-					// In this case, nothing past the "continue" keyword is executed.
+					// In this case, nothing is executed past the "continue" keyword.
 					// The next iteration starts immediately (counter = 6).
 				}
 
 				Console.WriteLine(counter);
+				counter++;
 			}
 
 			// And the code continues from here.
 			Console.WriteLine("Program ends.");
-			// ...
 		}
 	}
 }

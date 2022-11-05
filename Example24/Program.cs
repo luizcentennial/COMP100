@@ -19,7 +19,7 @@ namespace Example24 {
 
 			Console.WriteLine();
 
-			// While the solution above works, there is another way.
+			// The solution above works, but there is another way.
 			// We can use a foreach loop to achieve the same result.
 			foreach (int element in numbers) { // For each number (integer) in the numbers array...
 				// Do this:

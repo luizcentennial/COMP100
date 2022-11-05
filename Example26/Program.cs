@@ -6,21 +6,17 @@ namespace Example26 {
 			// PATTERNS:
 			// We can use nested loops to draw patterns in the console.
 
-			for (int row = 0; row < 10; row++) {
-				for (int column = 0; column < 10; column++) {
-					if (row == column) {
-						Console.Write("XX ");
-					}
-					else if ( row + column == 9) {
+			for (int row = 0; row < 10; row++) { // Prints rows.
+				for (int column = 0; column < 10; column++) { // Prints columns.
+					if (row == column || row + column == 9) {
 						Console.Write("XX ");
 					}
 					else {
-						//Console.Write($"{row}{column} ");
-						Console.Write($"   ");
+						Console.Write("   ");
 					}
 				}
 
-				Console.WriteLine();
+				Console.WriteLine(); // Line break.
 			}
 		}
 	}
