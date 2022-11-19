@@ -3,10 +3,10 @@
 namespace Example27 {
 	class Program {
 		static void Main(string[] args) {
-			// METHODS
+			// METHODS:
 			// Methods are structures that encapsulate logic.
-			// Methods != Functions
-			// Methods depend on a class to exist. It exists inside of a class.
+			// Methods != Functions.
+			// Methods depend on a class to exist. They exist inside classes.
 			// Functions exist on its own. They do not depend on classes to exist.
 
 			// Main advantages of methods:
@@ -25,6 +25,7 @@ namespace Example27 {
 		// Methods are defined here - INSIDE the class, but OUTSIDE other methods.
 		// <access modifier> static <return type> MethodName(<parameters, which are optional>) { <Method logic> }
 		public static void Greet() {
+			// Method logic goes here.
 			Console.WriteLine("Hello!");
 		}
 	}

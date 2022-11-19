@@ -14,7 +14,7 @@ namespace Example29 {
 		public static void DisplaySum(int first, double second) {
 			double result = first + second;
 
-			Console.WriteLine($"The result is: {result}");
+			Console.WriteLine($"The result is: {result}");		
 		}
 	}
 }
