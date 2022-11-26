@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Example33 {
+namespace Example34 {
 	class Program {
 		static void Main(string[] args) {
 			// OUT PARAMETERS:
@@ -13,7 +13,7 @@ namespace Example33 {
 			// The "out" keyword does not require the object to be initialized in advance, because
 			// usually, "out" parameters are expected to be initialized by the method.
 			InitializeInt(out input);
-			Console.WriteLine(input);   // Prints 1
+			Console.WriteLine(input);	// Prints 1
 		}
 
 		// This method takes in an object as reference.
