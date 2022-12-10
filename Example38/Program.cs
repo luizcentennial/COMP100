@@ -26,8 +26,8 @@ namespace Example38 {
 			while (true) {
 				Console.Clear();
 
-				bool success = false;
 				double amount;
+				bool success;
 
 				while (true) {
 					int input = DisplayMenu();
@@ -37,7 +37,6 @@ namespace Example38 {
 						success = Deposit(amount);
 
 						break;
-
 					}
 					else if (input == 2) {
 						amount = GetTransactionAmount();
@@ -46,15 +45,16 @@ namespace Example38 {
 						break;
 					}
 					else {
+						success = false;
 						DisplayMessage("Invalid selection. Please try again.", true);
 					}
 				}
 
 				if (success) {
-					DisplayMessage($"Transaction successfully processed!");
+					DisplayMessage("Transaction successfully processed.");
 				}
 				else {
-					DisplayMessage($"Error processing transaction.", true);
+					DisplayMessage("Error processing transaction.", true);
 				}
 
 				Console.WriteLine($"Account balance: {balance:C}\n");
@@ -69,7 +69,7 @@ namespace Example38 {
 					break;
 				}
 				else {
-					DisplayMessage("Invalid selection. Please try again.", true);
+					DisplayMessage("Invalid selection.", true);
 				}
 			}
 		}
@@ -96,7 +96,7 @@ namespace Example38 {
 
 		public static bool Deposit(double amount) {
 			if (amount < 0) {
-				DisplayMessage($"Deposit amount cannot be negative.", true);
+				DisplayMessage("Deposit amount cannot be negative.", true);
 
 				return false;
 			}
@@ -108,7 +108,7 @@ namespace Example38 {
 
 		public static bool Withdraw(double amount) {
 			if (amount < 0) {
-				DisplayMessage($"Withdrawal amount cannot be negative.", true);
+				DisplayMessage("Withdrawal amount cannot be negative.", true);
 
 				return false;
 			}

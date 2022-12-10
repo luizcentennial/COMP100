@@ -8,7 +8,7 @@ namespace Example37 {
 		// However, objects declared in parent scopes are accessible inside child scopes,
 		// even though the opposite is NOT true.
 
-		// It is possible to define variables at the class level.
+		// It is possible to define variables at class level.
 		// These variables will be accessible across all of this class' methods.
 		// In C#, these variables are called "fields".
 		static string classVariable;
@@ -20,7 +20,7 @@ namespace Example37 {
 			// The line below throws an error, as "anotherVariable" is not an object Main knows of.
 			//Console.WriteLine(anotherVariable);
 
-			classVariable = "I can be accessed there";
+			classVariable = "I can be accessed here.";
 		}
 
 		public static void AnotherMethod() {
@@ -29,7 +29,7 @@ namespace Example37 {
 			// A local variable declared inside AnotherMethod is not accessible in Main.
 			// A local variable declared inside Main is not accessible in AnotherMethod.
 
-			string anotherVariable = "I am local to AnotherMethod";
+			string anotherVariable = "I am local to AnotherMethod.";
 
 			// The line below throws an error, as "variable" is not an object AnotherMethod knows of.
 			//Console.WriteLine(variable);
@@ -37,7 +37,7 @@ namespace Example37 {
 			if (true) {
 				// If statement's scope starts here =================
 
-				// The local variable "yetAnotherVariable" is this if statement.
+				// The local variable "yetAnotherVariable" is in this if statement's scope.
 				// Therefore, it is not accessible outside of this statement.
 				string yetAnotherVariable = "I am accessible inside this if statement, but not outside of it.";
 
