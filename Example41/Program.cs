@@ -22,19 +22,14 @@ namespace Example41 {
 
 		public static int[] GetFibonacciArray(int numberOfElements) {
 			int[] series = new int[numberOfElements];
-			int current = 0;
-			int next = 1;
 
 			for (int i = 0; i < numberOfElements; i++) {
 				if (i < 2) {
-					series[i] = current;
+					series[i] = i;
 				}
 				else {
-					series[i] = next;
-					next = current + series[i - 1];
+					series[i] = series[i - 1] + series[i - 2];
 				}
-
-				current = next;
 			}
 
 			return series;
