@@ -17,7 +17,13 @@ namespace Example33 {
 			// Effectively, access to the "input" variable is passed into the method.
 			// The "ref" keyword requires the object to be initialized in advance.
 			Double(ref input);			// Prints 10
-			Console.WriteLine(input);	// Prints 10
+			Console.WriteLine(input);   // Prints 10
+
+
+			// IN PARAMETERS:
+			// The "in" keyword indicates that an object is passed into a method as a reference, too. 
+			// However, "in" parameters cannot be changed inside the calling method.
+			TryToAddOne(in input);
 		}
 
 		// This method takes in an object as value.
@@ -30,6 +36,14 @@ namespace Example33 {
 		// This method takes in an object as reference.
 		public static void Double(ref int number) {
 			number = number * 2;
+
+			Console.WriteLine(number);
+		}
+
+		// This method takes in an object as reference, and tries to change it.
+		public static void TryToAddOne(in int number) {
+			// The line below throws an error. "In" parameters cannot be changed!
+			//number = number * 2;
 
 			Console.WriteLine(number);
 		}
