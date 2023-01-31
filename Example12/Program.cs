@@ -3,7 +3,7 @@
 namespace Example12 {
 	class Program {
 		static void Main(string[] args) {
-			// IF-ELSE IF-ELSE STATEMENTS:
+			// IF-ELSE-IF-ELSE STATEMENTS:
 			// A conditional structure that lets us define multiple conditions.
 			bool condition = true;
 			bool anotherCondition = true;
