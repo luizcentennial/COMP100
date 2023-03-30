@@ -3,7 +3,7 @@
 namespace Example29 {
 	class Program {
 		static void Main(string[] args) {
-			// Positional:
+			// Positional inference:
 			DisplaySum(1, 1.5);
 
 			// Named parameters:
